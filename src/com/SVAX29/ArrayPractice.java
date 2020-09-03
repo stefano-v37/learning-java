@@ -2,13 +2,14 @@ package com.SVAX29;
 
 public class ArrayPractice {
     public static void main (String args[]){
-        int array [] = {3,4,6,1,8,34,5,2};
+        int array [] = {3,4,6,40,8,34,5,2};
         System.out.println(findMax(array));
         findMin(array);
         ArrayPractice ob = new ArrayPractice();
         System.out.println(ob.findMax2(array));
         System.out.println(ob.findDifference(array));
         System.out.println(ob.lucky13(array));
+        System.out.println(ob.lucky13Match(array));
 
     }
 
@@ -69,10 +70,28 @@ public class ArrayPractice {
     public boolean lucky13(int [] someArray){
         for(int i=0; i<someArray.length; i++){
             if (someArray[i] == 1 || someArray[i] == 3){
-                return false;
+                return true;
             }
 
         }
-        return true;
+        return false;
+    }
+
+    public boolean lucky13Match(int [] numbers){
+        boolean oneFound = false;
+        boolean threeFound = false;
+        for (int i=0; i<numbers.length;i++){
+            if(oneFound && threeFound){
+                return true;
+            }
+            if (numbers[i] == 1){
+                oneFound = true;
+            }
+            else if (numbers[i] == 3){
+                threeFound = true;
+            }
+
+        }
+        return false;
     }
 }
