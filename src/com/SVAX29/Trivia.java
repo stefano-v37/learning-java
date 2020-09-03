@@ -59,7 +59,7 @@ public class Trivia {
             }
         }
         if (money > 0){
-            System.out.println("In the end you won " + money + "€");
+            System.out.println("In the end you win " + money + "€");
         }
         else if (money == 0){
             // Can't happen with odd number of questions
