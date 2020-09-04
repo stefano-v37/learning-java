@@ -17,4 +17,12 @@ public class ClassRoom {
     public Student[] getStudents(){
         return _students;
     }
+
+    public String toString(){
+        String res = "Name\t\tTestA\tTestB\tTestC\n";
+        for (int i=0; i<_students.length;i++) {
+            res += _students[i].get_name()+"\t\t"+_students[i].get_testA()+"\t"+_students[i].get_testB()+"\t"+_students[i].get_testC()+"\n";
+        }
+        return res;
+    }
 }
