@@ -7,6 +7,16 @@ public class Dog {
     private String _color;
     private int _size;
 
+    // constructors go here. Anyway, every java class inherits void constructor from Class class
+    public Dog(){
+        // every empty constructors instance will have color brown
+        _color = "Brown";
+    }
+
+    public Dog(String name){
+        _name = name;
+    }
+
     public void jump(){}
     public void moveright(){}
     public void moveLeft(){}
