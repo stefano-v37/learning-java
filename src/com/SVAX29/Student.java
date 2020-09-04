@@ -52,4 +52,11 @@ public class Student {
     public void set_testC(int testC){
         this._testC = testC;
     }
+
+    public int testAvg(){
+        // I am attaching to THIS object, created on another class
+        return (this.get_testA() + this.get_testB() + this.get_testC())/3;
+        // Isn't it ok to write this??
+        // return (this._testA + this._testB + this._testC)/3;
+    }
 }
