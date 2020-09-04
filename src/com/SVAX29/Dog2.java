@@ -13,6 +13,11 @@ public class Dog2 extends Animal {
         _numberOfBarks = numOfBarks;
     }
 
+    public void jump(){
+        // it overrides the super-class same signature method
+        System.out.println("The dog jump");
+    }
+
     public void setNumOfBarks(int numOfBarks){
         _numberOfBarks = numOfBarks;
     }

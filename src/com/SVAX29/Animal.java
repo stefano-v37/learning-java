@@ -5,7 +5,9 @@ public class Animal {
     private String _color;
     private int _size;
 
-    public void jump(){}
+    public void jump(){
+        System.out.println("The animal jump");
+    }
     public void moveright(){}
     public void moveLeft(){}
 

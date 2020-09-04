@@ -12,6 +12,10 @@ public class Cat extends Animal {
         _numberOfMeows = numOfMeows;
     }
 
+    public void jump() {
+        System.out.println("The cat jump");
+    }
+
     public void setNumberOfMeows(int numOfMeows){
         _numberOfMeows = numOfMeows;
     }
